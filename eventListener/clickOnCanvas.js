@@ -28,7 +28,6 @@ const clickOnCanvas = (e, canvas, ctx, objectGlobal) => {
     objectGlobal[playerToPlay].push(positionPlay);
     // adversaire play
     let bestPlay = bestSolution(objectGlobal);
-    console.log(bestPlay);
     if (bestPlay.length === 0) {
       drawAll(ctx, objectGlobal);
       alert("égality");

@@ -1,51 +1,57 @@
 const drawPlayer = (ctx, imageJoueur, grille) => {
   const taille = 20;
+  const x1 = 45;
+  const x2 = 145;
+  const x3 = 235;
+  const y1 = 50;
+  const y2 = 155;
+  const y3 = 240;
   const placement = [
     {},
     {
       id: 1,
-      x: 50,
-      y: 50,
+      x: x1,
+      y: y1,
     },
     {
       id: 2,
-      x: 152,
-      y: 50,
+      x: x2,
+      y: y1,
     },
     {
       id: 3,
-      x: 232,
-      y: 50,
+      x: x3,
+      y: y1,
     },
     {
       id: 4,
-      x: 50,
-      y: 152,
+      x: x1,
+      y: y2,
     },
     {
       id: 5,
-      x: 152,
-      y: 152,
+      x: x2,
+      y: y2,
     },
     {
       id: 6,
-      x: 232,
-      y: 152,
+      x: x3,
+      y: y2,
     },
     {
       id: 7,
-      x: 50,
-      y: 252,
+      x: x1,
+      y: y3,
     },
     {
       id: 8,
-      x: 152,
-      y: 232,
+      x: x2,
+      y: y3,
     },
     {
       id: 9,
-      x: 232,
-      y: 232,
+      x: x3,
+      y: y3,
     },
   ];
 

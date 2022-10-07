@@ -1,6 +1,7 @@
 import drawAll from "./canvas/drawAll.js";
 import onCanvas from "./eventListener/onCanvas.js";
 import onRestart from "./eventListener/onRestart.js";
+import onChoosePlayer from "./eventListener/onChoosePlayer.js";
 // canvas
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
@@ -8,7 +9,6 @@ canvas.width = 304;
 canvas.height = 304;
 // button
 const restart = document.getElementById("restart");
-console.log(restart);
 //init
 const objectGlobal = {
   p1: [],
@@ -23,3 +23,6 @@ drawAll(ctx, objectGlobal);
 onCanvas(canvas, ctx, objectGlobal);
 // button
 onRestart(restart, saveInit, ctx, objectGlobal);
+onChoosePlayer(ctx, objectGlobal);
+
+// TODO OPPONENT PLAY FIRST si 5 2 ça win etc...

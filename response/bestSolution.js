@@ -6,7 +6,12 @@ import playForMakeDouble from "./../botToPlay/playForMakeDouble/playForMakeDoubl
 import playForCounterDouble from "../botToPlay/playForCounterDouble/playForCounterDouble.js";
 import stayToPlay from "../tools/stayToPlay.js";
 import playPriorityExtremity from "../botToPlay/playPriorityExtremity/playPriorityExtremity.js";
+import getRandomInt from "./../tools/getRandomInt.js";
 const bestSolution = (send) => {
+  //first play
+  if (send.p1.length === 0 && send.p2.length === 0) {
+    return getRandomInt(9);
+  }
   //tcheck si pas de winner
   const winner = isWinner(send);
   if (winner) return winner;
